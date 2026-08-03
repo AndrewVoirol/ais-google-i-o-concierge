@@ -1,0 +1,16 @@
+{
+  "name": "Google I/O 2026 Concierge",
+  "short_name": "I/O '26",
+  "description": "Your personalized mobile app companion for Google I/O.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#9334E6",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
