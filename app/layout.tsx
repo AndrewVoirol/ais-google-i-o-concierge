@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import ServiceWorkerRegister from '@/components/service-worker-register';
 import './globals.css';
@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: 'Google I/O 2026 Concierge',
   description: 'Your personalized mobile app companion for Google I/O.',
   manifest: '/manifest.json',
+  icons: {
+    icon: '/favicon.svg',
+  },
+};
+
+export const viewport: Viewport = {
   themeColor: '#9334E6',
 };
 
