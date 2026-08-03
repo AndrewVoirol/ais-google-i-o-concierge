@@ -109,7 +109,7 @@ const SESSIONS = [
   }
 ];
 
-export default function GoogleIOApp() {
+function GoogleIOApp() {
   const [isMounting, setIsMounting] = useState(true);
 
   // Simulate loading native modules
@@ -132,6 +132,9 @@ export default function GoogleIOApp() {
     </div>
   );
 }
+
+import dynamic from 'next/dynamic';
+export default dynamic(() => Promise.resolve(GoogleIOApp), { ssr: false });
 
 function SplashScreen() {
   return (
